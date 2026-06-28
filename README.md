@@ -20,6 +20,7 @@
 
 - AI Automation Landing — лендинг для услуги AI-автоматизации малого бизнеса.
 - Exam Mentor Landing — лендинг для репетитора по подготовке к ЕГЭ.
+- FitCoach Landing — лендинг для персонального фитнес-тренера.
 
 ## Technologies
 
@@ -67,6 +68,8 @@ AI Automation Landing: https://01-ai-automation-landing.vercel.app/
 
 Exam Mentor Landing: https://03-tutor-landing.vercel.app/
 
+FitCoach Landing: https://vercel.com/mishaz0103s-projects/04-fitness-coach-landing
+
 ## GitHub Repository
 
 Portfolio repository: add GitHub repository link here.
@@ -74,3 +77,5 @@ Portfolio repository: add GitHub repository link here.
 AI Automation Landing: https://github.com/blacklighter58/01-ai-automation-landing
 
 Exam Mentor Landing: https://github.com/blacklighter58/03-tutor-landing
+
+FitCoach Landing: https://github.com/blacklighter58/04-fitness-coach-landing

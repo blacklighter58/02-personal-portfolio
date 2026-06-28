@@ -598,7 +598,7 @@ h3 {
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 22px;
   align-items: stretch;
 }
@@ -636,6 +636,19 @@ h3 {
 .project-preview-education .preview-title,
 .project-preview-education .preview-bar span:nth-child(2) {
   background: #93c5fd;
+}
+
+.project-preview-fitness {
+  background:
+    linear-gradient(90deg, rgba(255, 255, 255, 0.08) 1px, transparent 1px),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.08) 1px, transparent 1px),
+    linear-gradient(145deg, #160f12, #3a1117 52%, #7c1d16);
+  background-size: 30px 30px, 30px 30px, auto;
+}
+
+.project-preview-fitness .preview-title,
+.project-preview-fitness .preview-bar span:nth-child(2) {
+  background: #f97316;
 }
 
 .preview-window {
@@ -980,7 +993,7 @@ h3 {
   }
 
   .projects-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .project-card {
@@ -1028,6 +1041,7 @@ h3 {
 
   .hero-stats,
   .cards-grid,
+  .projects-grid,
   .value-grid {
     grid-template-columns: 1fr;
   }
