@@ -598,7 +598,7 @@ h3 {
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 22px;
   align-items: stretch;
 }
@@ -649,6 +649,41 @@ h3 {
 .project-preview-fitness .preview-title,
 .project-preview-fitness .preview-bar span:nth-child(2) {
   background: #f97316;
+}
+
+.project-preview-beauty {
+  background:
+    linear-gradient(90deg, rgba(122, 72, 92, 0.08) 1px, transparent 1px),
+    linear-gradient(180deg, rgba(122, 72, 92, 0.08) 1px, transparent 1px),
+    linear-gradient(145deg, #fff7f8, #f5dedf 58%, #d6a87d);
+  background-size: 30px 30px, 30px 30px, auto;
+}
+
+.project-preview-beauty .preview-window {
+  border-color: rgba(122, 72, 92, 0.16);
+  background: rgba(255, 255, 255, 0.52);
+}
+
+.project-preview-beauty .preview-bar {
+  border-bottom-color: rgba(122, 72, 92, 0.14);
+}
+
+.project-preview-beauty .preview-title,
+.project-preview-beauty .preview-bar span:nth-child(2) {
+  background: #b77963;
+}
+
+.project-preview-beauty .preview-line {
+  background: rgba(122, 72, 92, 0.22);
+}
+
+.project-preview-beauty .line-wide {
+  background: rgba(122, 72, 92, 0.72);
+}
+
+.project-preview-beauty .preview-grid span {
+  border-color: rgba(122, 72, 92, 0.14);
+  background: rgba(255, 255, 255, 0.56);
 }
 
 .preview-window {
