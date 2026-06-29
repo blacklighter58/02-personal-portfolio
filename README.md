@@ -22,6 +22,7 @@
 - Exam Mentor Landing — лендинг для репетитора по подготовке к ЕГЭ.
 - FitCoach Landing — лендинг для персонального фитнес-тренера.
 - Lumi Beauty Landing — лендинг для beauty-студии в светлом премиальном стиле.
+- Warm Cup Landing — лендинг для локальной кофейни в тёплом уютном стиле.
 
 ## Technologies
 
@@ -73,6 +74,8 @@ FitCoach Landing: https://vercel.com/mishaz0103s-projects/04-fitness-coach-landi
 
 Lumi Beauty Landing: https://05-beauty-studio-landing.vercel.app/
 
+Warm Cup Landing: https://06-cafe-landing.vercel.app/
+
 ## GitHub Repository
 
 Portfolio repository: add GitHub repository link here.
@@ -84,3 +87,5 @@ Exam Mentor Landing: https://github.com/blacklighter58/03-tutor-landing
 FitCoach Landing: https://github.com/blacklighter58/04-fitness-coach-landing
 
 Lumi Beauty Landing: https://github.com/blacklighter58/05-beauty-studio-landing
+
+Warm Cup Landing: https://github.com/blacklighter58/06-cafe-landing
