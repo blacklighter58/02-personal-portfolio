@@ -1,16 +1,22 @@
 # blacklighter58 Portfolio
 
-Личный сайт-портфолио начинающего веб-разработчика, который создаёт сайты, лендинги, простые AI-инструменты и автоматизации для бизнеса.
+Личное портфолио начинающего веб-разработчика. Основной фокус — аккуратные лендинги, страницы услуг и портфолио для малого бизнеса, экспертов и локальных проектов.
 
 ## Project Goal
 
-Проект создан, чтобы показать направление развития, навыки веб-разработки и первые практические проекты для малого бизнеса, услуг и специалистов.
+Проект создан, чтобы показать первые работы в веб-разработке и понятное позиционирование blacklighter58: небольшие сайты с оффером, услугами, ценами, контактами и адаптацией под телефон.
+
+## Current Focus
+
+Сейчас я беру простые проекты: лендинги, страницы услуг, портфолио и небольшие доработки. Сложные системы, магазины и личные кабинеты пока не беру.
+
+AI-сценарии и автоматизация заявок — следующее направление развития. Речь про простые сценарии, формы и заготовки, а не про сложные AI-системы.
 
 ## Features
 
-- Главный экран с позиционированием blacklighter58
-- Блок с описанием навыков и направления развития
-- Секция услуг и подхода к работе
+- Hero-блок с фокусом на лендингах для малого бизнеса и экспертов
+- About-блок с честным описанием текущего уровня и направления
+- Секция услуг: лендинги, портфолио, простые AI-сценарии и базовая работа с заявками
 - Сетка проектов с визуальными превью
 - Контактный CTA-блок
 - Адаптивная верстка для desktop, tablet и mobile
@@ -18,11 +24,11 @@
 
 ## Projects in Portfolio
 
-- AI Automation Landing — лендинг для услуги AI-автоматизации малого бизнеса.
-- Exam Mentor Landing — лендинг для репетитора по подготовке к ЕГЭ.
-- FitCoach Landing — лендинг для персонального фитнес-тренера.
-- Lumi Beauty Landing — лендинг для beauty-студии в светлом премиальном стиле.
-- Warm Cup Landing — лендинг для локальной кофейни в тёплом уютном стиле.
+- AI Automation Landing — концепт лендинга для услуги автоматизации заявок: показывает, как объяснить сложную цифровую услугу простым языком для малого бизнеса.
+- Exam Mentor Landing — лендинг для репетитора по ЕГЭ с диагностикой, форматом занятий, стоимостью и заявкой на первую встречу.
+- FitCoach Landing — лендинг для персонального тренера с программами, недельным ритмом тренировок, контролем прогресса и записью на старт.
+- Lumi Beauty Landing — сайт для beauty-студии с услугами, ценами, записью и мягкой премиальной подачей атмосферы.
+- Warm Cup Landing — сайт для небольшой кофейни у парка: меню, атмосфера, часы работы и быстрый путь к контакту.
 
 ## Technologies
 
@@ -51,16 +57,17 @@
 - Project cards grid
 - Button animations
 - JavaScript interactions
+- Writing project descriptions as mini-cases
 - Git and GitHub workflow
 - Deployment with Vercel
 
 ## Future Improvements
 
-- Add more real projects
-- Add real contact details
-- Improve accessibility
-- Add project screenshots
-- Add form integration
+- Add real screenshots for each project
+- Add more finished client-style pages
+- Improve accessibility details
+- Add real contact form integration
+- Add short notes about decisions made in each project
 
 ## Live Demo
 
@@ -70,7 +77,7 @@ AI Automation Landing: https://01-ai-automation-landing.vercel.app/
 
 Exam Mentor Landing: https://03-tutor-landing.vercel.app/
 
-FitCoach Landing: https://vercel.com/mishaz0103s-projects/04-fitness-coach-landing
+FitCoach Landing: https://04-fitness-coach-landing.vercel.app/
 
 Lumi Beauty Landing: https://05-beauty-studio-landing.vercel.app/
 
