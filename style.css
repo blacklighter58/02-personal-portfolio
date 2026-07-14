@@ -336,19 +336,6 @@ h3 {
   flex-direction: column;
 }
 
-.project-card:nth-child(2) {
-  grid-column: span 4;
-}
-
-.project-card:nth-child(3) {
-  grid-column: span 4;
-}
-
-.project-card:nth-child(4),
-.project-card:nth-child(5) {
-  grid-column: span 6;
-}
-
 .project-cover {
   position: relative;
   min-height: 190px;
@@ -470,28 +457,76 @@ h3 {
 }
 
 .project-card:nth-child(1) .project-type {
+  color: #5b4c8f;
+  background: #eeebfb;
+}
+
+.project-card:nth-child(2) .project-type {
   color: var(--coffee);
   background: #f4eadc;
 }
 
-.project-card:nth-child(2) .project-type {
+.project-card:nth-child(3) .project-type {
   color: var(--blue);
   background: #edf2f7;
 }
 
-.project-card:nth-child(3) .project-type {
+.project-card:nth-child(4) .project-type {
   color: var(--rose);
   background: #f7eaed;
 }
 
-.project-card:nth-child(4) .project-type {
+.project-card:nth-child(5) .project-type {
   color: #a6532f;
   background: #fff1e5;
 }
 
-.project-card:nth-child(5) .project-type {
+.project-card:nth-child(6) .project-type {
   color: var(--green);
   background: #edf5ef;
+}
+
+.cover-booking {
+  background: #e6e2f4;
+  color: #5b4c8f;
+}
+
+.preview-booking {
+  background: #f7f5fc;
+}
+
+.preview-booking i:nth-child(1) {
+  top: 30px;
+  left: 12px;
+  width: 22%;
+  height: 46px;
+  background: rgba(91, 76, 143, 0.1);
+}
+
+.preview-booking i:nth-child(2),
+.preview-booking i:nth-child(3),
+.preview-booking i:nth-child(4) {
+  left: 38%;
+  right: 14px;
+  height: 10px;
+  border: 0;
+  background: currentColor;
+}
+
+.preview-booking i:nth-child(2) {
+  top: 32px;
+  opacity: 0.48;
+}
+
+.preview-booking i:nth-child(3) {
+  top: 52px;
+  opacity: 0.26;
+}
+
+.preview-booking i:nth-child(4) {
+  top: 72px;
+  right: 44px;
+  opacity: 0.16;
 }
 
 .cover-automation {
@@ -745,6 +780,15 @@ h3 {
   padding: 0;
   margin: 14px 0 0;
   list-style: none;
+}
+
+.project-note {
+  margin: 14px 0 0;
+  padding-top: 12px;
+  border-top: 1px solid rgba(29, 32, 31, 0.14);
+  color: var(--muted) !important;
+  font-size: 0.84rem;
+  line-height: 1.45 !important;
 }
 
 .tech-list li {
