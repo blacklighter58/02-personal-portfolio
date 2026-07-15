@@ -17,8 +17,8 @@ function scrollToSection(sectionId) {
     return;
   }
 
-  const headerOffset = document.querySelector(".site-header").offsetHeight + 18;
-  const sectionTop = section.getBoundingClientRect().top + window.scrollY - headerOffset;
+  const sectionOffset = 18;
+  const sectionTop = Math.max(0, section.getBoundingClientRect().top + window.scrollY - sectionOffset);
 
   window.scrollTo({
     top: sectionTop,

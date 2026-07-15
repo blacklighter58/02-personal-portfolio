@@ -23,6 +23,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 18px;
 }
 
 body {
@@ -51,9 +52,7 @@ a {
 }
 
 .site-header {
-  position: sticky;
-  top: 0;
-  z-index: 20;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -125,7 +124,7 @@ a {
   width: min(100% - 32px, var(--container));
   margin: 0 auto;
   padding: 78px 0;
-  scroll-margin-top: 86px;
+  scroll-margin-top: 18px;
 }
 
 .label {
@@ -973,6 +972,7 @@ h3 {
 @media (max-width: 980px) {
   .site-header {
     width: min(100% - 24px, var(--container));
+    flex-wrap: wrap;
   }
 
   .nav-toggle {
@@ -980,11 +980,11 @@ h3 {
   }
 
   .site-nav {
-    position: absolute;
-    top: calc(100% + 1px);
-    right: 12px;
-    left: 12px;
+    position: static;
+    order: 3;
     display: none;
+    width: 100%;
+    margin-top: 8px;
     flex-direction: column;
     align-items: stretch;
     padding: 10px;
