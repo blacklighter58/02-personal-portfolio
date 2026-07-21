@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Кейс blacklighter58: система онлайн-записи с Telegram-ботом, REST API, PostgreSQL и админ-панелью.">
+  <meta property="og:title" content="Система онлайн-записи — blacklighter58">
+  <meta property="og:description" content="Telegram-бот, Booking API, PostgreSQL и админ-панель в одном full-stack проекте.">
+  <title>Система онлайн-записи — blacklighter58</title>
+  <link rel="stylesheet" href="../../style.css">
+</head>
+<body class="case-page">
+  <header class="site-header">
+    <a class="logo" href="../../index.html#hero" aria-label="blacklighter58 home">blacklighter58</a>
+
+    <button class="nav-toggle" type="button" aria-label="Открыть меню" aria-expanded="false">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="site-nav" aria-label="Навигация по кейсу">
+      <a href="#solution">Решение</a>
+      <a href="#flow">Сценарий</a>
+      <a href="#architecture">Архитектура</a>
+      <a href="#features">Возможности</a>
+      <a href="#repositories">Репозитории</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="case-hero section" id="case-top">
+      <div>
+        <p class="label">Full-stack case study</p>
+        <p class="case-status">Завершённый full-stack проект</p>
+        <h1>Система онлайн-записи</h1>
+        <p class="case-lead">Telegram-бот помогает клиенту оформить запись, REST API собирает бизнес-логику и данные, а админ-панель даёт доступ к бронированиям и их статусам.</p>
+        <ul class="case-stack" aria-label="Основной стек проекта">
+          <li>Telegram Bot</li>
+          <li>Node.js</li>
+          <li>Express</li>
+          <li>PostgreSQL</li>
+          <li>Vercel</li>
+        </ul>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="../../index.html#projects">Вернуться к проектам</a>
+          <a class="btn btn-secondary" href="https://github.com/blacklighter58/07-booking-admin-dashboard" target="_blank" rel="noreferrer">GitHub админ-панели</a>
+        </div>
+      </div>
+
+      <aside class="case-summary" aria-label="Состав системы">
+        <p class="label">Components</p>
+        <ol>
+          <li><strong>Telegram Bot</strong><span>пошаговая запись для клиента</span></li>
+          <li><strong>Booking API</strong><span>единый слой бизнес-логики</span></li>
+          <li><strong>Admin Dashboard</strong><span>просмотр и управление записями</span></li>
+        </ol>
+      </aside>
+    </section>
+
+    <section class="case-section section" id="task">
+      <div class="case-heading">
+        <p class="label">Задача</p>
+        <h2>Убрать ручные уточнения из процесса записи</h2>
+      </div>
+      <p class="case-copy">Небольшие компании часто принимают записи в сообщениях. Сотруднику приходится несколько раз уточнять услугу, специалиста, дату и время, а записи могут потеряться или пересечься. Этот проект показывает, как собрать этот путь в одну связанную систему.</p>
+    </section>
+
+    <section class="case-section section case-split" id="solution">
+      <div class="case-heading">
+        <p class="label">Решение</p>
+        <h2>Три компонента, одна запись</h2>
+      </div>
+      <div class="solution-list">
+        <article>
+          <span>01</span>
+          <h3>Telegram-бот</h3>
+          <p>Ведёт клиента по шагам: от выбора услуги и сотрудника до подтверждения времени.</p>
+        </article>
+        <article>
+          <span>02</span>
+          <h3>Booking API</h3>
+          <p>Принимает запросы бота и админ-панели, выдаёт свободные слоты и сохраняет записи.</p>
+        </article>
+        <article>
+          <span>03</span>
+          <h3>Админ-панель</h3>
+          <p>Показывает бронирования, помогает менять их статусы и видеть актуальный список записей.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="case-section section" id="flow">
+      <div class="case-heading">
+        <p class="label">Пользовательский сценарий</p>
+        <h2>От выбора услуги до записи в панели</h2>
+      </div>
+      <ol class="booking-flow">
+        <li>Выбор услуги</li>
+        <li>Выбор сотрудника</li>
+        <li>Выбор даты</li>
+        <li>Свободное время</li>
+        <li>Подтверждение</li>
+        <li>Запись в панели</li>
+      </ol>
+    </section>
+
+    <section class="case-section section architecture-section" id="architecture">
+      <div class="case-heading">
+        <p class="label">Архитектура</p>
+        <h2>API связывает интерфейсы и данные</h2>
+        <p>Бот и админ-панель не подключаются к базе напрямую: все рабочие операции проходят через Booking API.</p>
+      </div>
+      <div class="architecture-diagram" aria-label="Telegram User ведёт к Telegram Bot, затем к Booking API. Booking API двусторонне связан с PostgreSQL Neon. Admin Dashboard также обращается к Booking API.">
+        <div class="architecture-node node-user"><span>Клиент</span><strong>Telegram User</strong></div>
+        <div class="architecture-link link-user-bot" aria-hidden="true">→</div>
+        <div class="architecture-node node-bot"><span>Интерфейс записи</span><strong>Telegram Bot</strong></div>
+        <div class="architecture-link link-bot-api" aria-hidden="true">→</div>
+        <div class="architecture-node node-api"><span>Бизнес-логика</span><strong>Booking API</strong></div>
+        <div class="architecture-link link-api-db" aria-hidden="true">↔</div>
+        <div class="architecture-node node-db"><span>Хранение данных</span><strong>PostgreSQL / Neon</strong></div>
+        <div class="architecture-node node-dashboard"><span>Управление записями</span><strong>Admin Dashboard</strong></div>
+        <div class="architecture-link link-dashboard-api" aria-hidden="true">→</div>
+      </div>
+    </section>
+
+    <section class="case-section section case-split" id="features">
+      <div class="case-heading">
+        <p class="label">Ключевые возможности</p>
+        <h2>Что реализовано в системе</h2>
+      </div>
+      <ul class="feature-list">
+        <li>Пошаговая запись через Telegram</li>
+        <li>Выбор услуги и сотрудника</li>
+        <li>Выбор даты и свободного времени</li>
+        <li>Сохранение записей в PostgreSQL</li>
+        <li>Защита от двойного бронирования</li>
+        <li>JWT-авторизация администратора</li>
+        <li>API-key авторизация Telegram-бота</li>
+        <li>Просмотр записей и изменение статусов</li>
+        <li>Health checks и production deployment</li>
+      </ul>
+    </section>
+
+    <section class="case-section section case-two-column" id="technical">
+      <div>
+        <p class="label">Технические решения</p>
+        <h2>Разделённая, но связанная архитектура</h2>
+        <p>Система разделена на три части, а REST API остаётся единым слоем бизнес-логики. PostgreSQL используется как источник данных, а доступ администратора и Telegram-бота защищён разными способами авторизации.</p>
+        <p>Express подготовлен для serverless-развёртывания на Vercel. Конфигурация подключений и секреты передаются через переменные окружения и не попадают в публичный код.</p>
+      </div>
+      <div>
+        <p class="label">Инженерные задачи</p>
+        <h2>Что потребовало внимания</h2>
+        <ul class="plain-list">
+          <li>Связать бота, API и админ-панель в один сценарий.</li>
+          <li>Настроить CORS и production-переменные окружения.</li>
+          <li>Подключить PostgreSQL / Neon и выдачу свободных слотов.</li>
+          <li>Не допустить повторную запись на одно время.</li>
+          <li>Сохранить корректную работу Express в serverless-среде.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="case-section section limitation-section" id="limitation">
+      <p class="label">Текущее ограничение</p>
+      <h2>Состояние диалога бота пока хранится в памяти процесса</h2>
+      <p>При serverless cold start текущий шаг пользователя может сброситься. В следующей версии это состояние можно перенести в PostgreSQL или Redis. Это известное ограничение текущей архитектуры, а не часть данных бронирования.</p>
+    </section>
+
+    <section class="case-section section repositories-section" id="repositories">
+      <div class="case-heading">
+        <p class="label">Репозитории</p>
+        <h2>Компоненты проекта</h2>
+      </div>
+      <div class="repository-list">
+        <a href="https://github.com/blacklighter58/07-booking-admin-dashboard" target="_blank" rel="noreferrer">
+          <span>01</span><strong>Admin Dashboard</strong><small>GitHub</small>
+        </a>
+        <div>
+          <span>02</span><strong>Telegram Bot</strong><small>Ссылка на репозиторий ещё не добавлена в портфолио</small>
+        </div>
+        <div>
+          <span>03</span><strong>Booking API</strong><small>Ссылка на репозиторий ещё не добавлена в портфолио</small>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section section case-result" id="result">
+      <p class="label">Результат</p>
+      <h2>Запись проходит через Telegram, сохраняется в PostgreSQL и появляется в админ-панели.</h2>
+      <p>Создана и развёрнута полноценная система, в которой клиент оформляет запись через Telegram, данные сохраняются в PostgreSQL, а администратор управляет бронированиями через отдельный интерфейс.</p>
+      <a class="btn btn-primary" href="../../index.html#projects">Ко всем проектам</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>blacklighter58 — Landing Page Developer, 2026</p>
+  </footer>
+
+  <script src="../../script.js"></script>
+</body>
+</html>
