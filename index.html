@@ -73,27 +73,51 @@
       </div>
 
       <div class="projects-list">
-        <article class="project-card project-featured">
-          <div class="project-cover cover-booking">
+        <article class="project-card project-card--flagship">
+          <div class="project-cover cover-booking project-system-visual">
             <div class="cover-meta">
               <span class="project-number">01</span>
-              <span>system</span>
+              <span>flagship</span>
             </div>
-            <div class="project-preview-slot" data-preview="booking-desk">
-              <div class="preview-ui preview-booking" aria-hidden="true">
-                <i></i>
-                <i></i>
-                <i></i>
-                <i></i>
+            <div class="booking-system-diagram" aria-label="Telegram-бот передаёт запись в REST API, затем данные сохраняются в PostgreSQL и отображаются в админ-панели.">
+              <div class="system-node system-node--bot">
+                <span>01</span>
+                <b>Telegram Bot</b>
+                <small>принимает запись</small>
+              </div>
+              <span class="system-link system-link--right" aria-hidden="true">→</span>
+              <div class="system-node system-node--api">
+                <span>02</span>
+                <b>REST API</b>
+                <small>проверяет данные</small>
+              </div>
+              <span class="system-link system-link--down" aria-hidden="true">→</span>
+              <div class="system-node system-node--database">
+                <span>03</span>
+                <b>PostgreSQL</b>
+                <small>хранит записи</small>
+              </div>
+              <span class="system-link system-link--left" aria-hidden="true">→</span>
+              <div class="system-node system-node--dashboard">
+                <span>04</span>
+                <b>Admin Dashboard</b>
+                <small>управляет заявками</small>
               </div>
             </div>
-            <strong>Booking system</strong>
+            <p class="system-caption">Бот → API → данные → управление</p>
           </div>
 
           <div class="project-content">
-            <p class="project-type">Full-stack system</p>
+            <p class="project-type">Главный full-stack кейс</p>
             <h3>Система онлайн-записи</h3>
-            <p>Система онлайн-записи: Telegram-бот для клиентов, защищённый REST API, PostgreSQL и админ-панель для управления бронированиями.</p>
+            <p>Telegram-бот для клиента, REST API, PostgreSQL и админ-панель для управления записями в одном связанном проекте.</p>
+
+            <ul class="project-facts" aria-label="Ключевые компоненты системы">
+              <li>Бот ведёт клиента по записи</li>
+              <li>API обрабатывает запросы</li>
+              <li>PostgreSQL хранит бронирования</li>
+              <li>Панель помогает управлять статусами</li>
+            </ul>
 
             <ul class="tech-list" aria-label="Технологии системы онлайн-записи">
               <li>Telegram Bot</li>
@@ -103,11 +127,11 @@
               <li>Vercel</li>
             </ul>
 
-            <p class="project-note">Админ-панель — один из компонентов системы. Демо не содержит данных для входа.</p>
+            <p class="project-note">Публичное демо Telegram-бота будет добавлено позже.</p>
 
             <div class="project-actions">
-              <a class="btn btn-primary" href="projects/telegram-booking-system/index.html">Project Details</a>
-              <span class="btn btn-secondary btn-disabled" aria-disabled="true" title="Публичная ссылка на Telegram-бота ещё не добавлена">Open Telegram Bot</span>
+              <a class="btn btn-primary" href="projects/telegram-booking-system/index.html">Подробнее о проекте</a>
+              <span class="btn btn-secondary btn-disabled" aria-disabled="true" title="Публичная ссылка на Telegram-бота ещё не добавлена">Открыть Telegram-бота</span>
             </div>
           </div>
         </article>
@@ -256,7 +280,7 @@
           </div>
         </article>
 
-        <article class="project-card project-featured">
+        <article class="project-card">
           <div class="project-cover cover-automation">
             <div class="cover-meta">
               <span class="project-number">06</span>
