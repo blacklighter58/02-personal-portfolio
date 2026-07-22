@@ -72,51 +72,21 @@
         <p>Шесть работ: сайты для разных ниш и full-stack система онлайн-записи. У каждой — своя задача, интерфейс и технический акцент.</p>
       </div>
 
-      <div class="projects-list">
+      <div class="projects-flagship">
         <article class="project-card project-card--flagship">
-          <div class="project-cover cover-booking project-system-visual">
-            <div class="cover-meta">
+          <div class="flagship-info">
+            <div class="flagship-meta">
               <span class="project-number">01</span>
-              <span>flagship</span>
+              <p>Главный full-stack кейс</p>
             </div>
-            <div class="booking-system-diagram" aria-label="Telegram-бот передаёт запись в REST API, затем данные сохраняются в PostgreSQL и отображаются в админ-панели.">
-              <div class="system-node system-node--bot">
-                <span>01</span>
-                <b>Telegram Bot</b>
-                <small>принимает запись</small>
-              </div>
-              <span class="system-link system-link--right" aria-hidden="true">→</span>
-              <div class="system-node system-node--api">
-                <span>02</span>
-                <b>REST API</b>
-                <small>проверяет данные</small>
-              </div>
-              <span class="system-link system-link--down" aria-hidden="true">→</span>
-              <div class="system-node system-node--database">
-                <span>03</span>
-                <b>PostgreSQL</b>
-                <small>хранит записи</small>
-              </div>
-              <span class="system-link system-link--left" aria-hidden="true">→</span>
-              <div class="system-node system-node--dashboard">
-                <span>04</span>
-                <b>Admin Dashboard</b>
-                <small>управляет заявками</small>
-              </div>
-            </div>
-            <p class="system-caption">Бот → API → данные → управление</p>
-          </div>
-
-          <div class="project-content">
-            <p class="project-type">Главный full-stack кейс</p>
             <h3>Система онлайн-записи</h3>
-            <p>Telegram-бот для клиента, REST API, PostgreSQL и админ-панель для управления записями в одном связанном проекте.</p>
+            <p>Telegram-бот принимает заявки, API проверяет данные, PostgreSQL хранит записи, а админ-панель помогает управлять бронированиями.</p>
 
-            <ul class="project-facts" aria-label="Ключевые компоненты системы">
-              <li>Бот ведёт клиента по записи</li>
-              <li>API обрабатывает запросы</li>
-              <li>PostgreSQL хранит бронирования</li>
-              <li>Панель помогает управлять статусами</li>
+            <ul class="flagship-capabilities" aria-label="Возможности системы онлайн-записи">
+              <li>Telegram-бот для клиента</li>
+              <li>REST API с проверкой данных</li>
+              <li>PostgreSQL для хранения записей</li>
+              <li>Админ-панель для управления</li>
             </ul>
 
             <ul class="tech-list" aria-label="Технологии системы онлайн-записи">
@@ -127,15 +97,46 @@
               <li>Vercel</li>
             </ul>
 
-            <p class="project-note">Публичное демо Telegram-бота будет добавлено позже.</p>
+            <p class="project-note">Публичный деморежим будет добавлен позже.</p>
 
             <div class="project-actions">
               <a class="btn btn-primary" href="projects/telegram-booking-system/index.html">Подробнее о проекте</a>
-              <span class="btn btn-secondary btn-disabled" aria-disabled="true" title="Публичная ссылка на Telegram-бота ещё не добавлена">Открыть Telegram-бота</span>
+              <span class="btn btn-secondary btn-disabled" aria-disabled="true" title="Публичная ссылка на Telegram-бота ещё не добавлена">Демо Telegram-бота скоро</span>
             </div>
           </div>
-        </article>
 
+          <div class="flagship-flow-area">
+            <h3>Как это работает</h3>
+            <ol class="flagship-flow" aria-label="Путь записи через систему">
+              <li class="flow-step flow-step--bot">
+                <span class="flow-icon" aria-hidden="true"></span>
+                <strong>Telegram-бот</strong>
+                <small>Клиент выбирает услугу и время</small>
+              </li>
+              <li class="flow-arrow" aria-hidden="true">→</li>
+              <li class="flow-step flow-step--api">
+                <span class="flow-icon" aria-hidden="true"></span>
+                <strong>REST API</strong>
+                <small>Проверяет и обрабатывает запрос</small>
+              </li>
+              <li class="flow-arrow" aria-hidden="true">→</li>
+              <li class="flow-step flow-step--database">
+                <span class="flow-icon" aria-hidden="true"></span>
+                <strong>PostgreSQL</strong>
+                <small>Хранит записи и данные клиента</small>
+              </li>
+              <li class="flow-arrow" aria-hidden="true">→</li>
+              <li class="flow-step flow-step--dashboard">
+                <span class="flow-icon" aria-hidden="true"></span>
+                <strong>Админ-панель</strong>
+                <small>Помогает управлять статусами</small>
+              </li>
+            </ol>
+          </div>
+        </article>
+      </div>
+
+      <div class="projects-grid">
         <article class="project-card">
           <div class="project-cover cover-cafe">
             <div class="cover-meta">
@@ -156,7 +157,7 @@
           <div class="project-content">
             <p class="project-type">Local business</p>
             <h3>Warm Cup Landing</h3>
-            <p>Сайт для небольшой кофейни у парка: меню, часы работы, атмосфера и быстрый путь к контакту. Главная задача — передать ощущение живого места, куда хочется зайти утром за кофе.</p>
+            <p>Лендинг для кофейни: меню, атмосфера, часы работы и быстрый переход к контакту.</p>
 
             <ul class="tech-list" aria-label="Технологии проекта Warm Cup Landing">
               <li>HTML</li>
@@ -192,7 +193,7 @@
           <div class="project-content">
             <p class="project-type">Education</p>
             <h3>Exam Mentor Landing</h3>
-            <p>Лендинг для репетитора по ЕГЭ: диагностика, формат занятий, стоимость и заявка на первую встречу. Упор — спокойная структура подготовки без паники.</p>
+            <p>Лендинг для репетитора: формат занятий, стоимость и запись на первую встречу.</p>
 
             <ul class="tech-list" aria-label="Технологии проекта Exam Mentor Landing">
               <li>HTML</li>
@@ -264,7 +265,7 @@
           <div class="project-content">
             <p class="project-type">Fitness</p>
             <h3>FitCoach Landing</h3>
-            <p>Лендинг для персонального тренера: программы, недельный ритм тренировок, контроль прогресса и запись на старт. Упор — система вместо случайных упражнений.</p>
+            <p>Лендинг для тренера: программы, контроль прогресса и запись на старт.</p>
 
             <ul class="tech-list" aria-label="Технологии проекта FitCoach Landing">
               <li>HTML</li>
@@ -300,7 +301,7 @@
           <div class="project-content">
             <p class="project-type">Digital service</p>
             <h3>AI Automation Landing</h3>
-            <p>Концепт страницы для услуги автоматизации заявок: показывает, как объяснить сложную цифровую услугу простым языком для малого бизнеса.</p>
+            <p>Концепт страницы об автоматизации заявок для малого бизнеса.</p>
 
             <ul class="tech-list" aria-label="Технологии проекта AI Automation Landing">
               <li>HTML</li>

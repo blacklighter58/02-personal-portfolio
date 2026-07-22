@@ -46,7 +46,7 @@ scrollLinks.forEach((link) => {
 
 // Simple reveal animation for sections and cards without external libraries.
 const revealItems = document.querySelectorAll(
-  ".section-heading, .hero-note, .project-card, .build-list article, .build-note, .process-list article, .limits-card, .contact-cta, .case-heading, .case-copy, .solution-list, .booking-flow, .architecture-diagram, .feature-list, .case-two-column, .limitation-section, .repositories-section, .case-result"
+  ".section-heading, .hero-note, .project-card, .build-list article, .build-note, .process-list article, .limits-card, .contact-cta, .case-heading, .case-copy, .solution-list, .booking-flow, .architecture-diagram, .feature-list, .case-two-column, .limitation-section, .planned-section, .repositories-section, .case-result"
 );
 
 revealItems.forEach((item) => {
