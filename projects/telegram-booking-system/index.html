@@ -6,6 +6,7 @@
   <meta name="description" content="Кейс blacklighter58: система онлайн-записи с Telegram-ботом, REST API, PostgreSQL и админ-панелью.">
   <meta property="og:title" content="Система онлайн-записи — blacklighter58">
   <meta property="og:description" content="Telegram-бот, Booking API, PostgreSQL и админ-панель в одном full-stack проекте.">
+  <meta property="og:type" content="website">
   <title>Система онлайн-записи — blacklighter58</title>
   <link rel="stylesheet" href="../../style.css">
 </head>
@@ -45,6 +46,7 @@
         <div class="hero-actions">
           <a class="btn btn-primary" href="../../index.html#projects">Вернуться к проектам</a>
           <a class="btn btn-secondary" href="https://github.com/blacklighter58/07-booking-admin-dashboard" target="_blank" rel="noreferrer">GitHub админ-панели</a>
+          <a class="text-link" href="https://07-booking-admin-dashboard.vercel.app/" target="_blank" rel="noreferrer">Открыть демо админ-панели</a>
         </div>
       </div>
 
@@ -144,13 +146,13 @@
 
     <section class="case-section section case-two-column" id="technical">
       <div>
-        <p class="label">Технические решения</p>
+        <p class="label">API, данные и deployment</p>
         <h2>Разделённая, но связанная архитектура</h2>
         <p>Система разделена на три части, а REST API остаётся единым слоем бизнес-логики. PostgreSQL используется как источник данных, а доступ администратора и Telegram-бота защищён разными способами авторизации.</p>
         <p>Express подготовлен для serverless-развёртывания на Vercel. Конфигурация подключений и секреты передаются через переменные окружения и не попадают в публичный код.</p>
       </div>
       <div>
-        <p class="label">Инженерные задачи</p>
+        <p class="label">Challenges &amp; lessons</p>
         <h2>Что потребовало внимания</h2>
         <ul class="plain-list">
           <li>Связать бота, API и админ-панель в один сценарий.</li>
@@ -159,6 +161,7 @@
           <li>Не допустить повторную запись на одно время.</li>
           <li>Сохранить корректную работу Express в serverless-среде.</li>
         </ul>
+        <p class="case-small-note">Главный вывод из этой работы: интерфейс, бот и база данных должны быть связаны через понятный API-контракт, иначе развитие системы быстро становится сложнее.</p>
       </div>
     </section>
 
@@ -195,7 +198,7 @@
   </main>
 
   <footer class="site-footer">
-    <p>blacklighter58 — Landing Page Developer, 2026</p>
+    <p>blacklighter58 — Web Developer, 2026</p>
   </footer>
 
   <script src="../../script.js"></script>

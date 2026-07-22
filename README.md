@@ -1,34 +1,37 @@
 # blacklighter58 Portfolio
 
-Личное портфолио начинающего веб-разработчика. Основной фокус — лендинги, сайты для услуг, страницы экспертов и небольшие доработки для малого бизнеса.
+Личное портфолио blacklighter58 — веб-разработчика, который создаёт сайты, Telegram-ботов, API, админ-панели и небольшую автоматизацию для бизнеса.
 
 ## Project Goal
 
-Проект создан, чтобы показать первые демо-работы blacklighter58 и честно обозначить текущий уровень: простые страницы с оффером, услугами, ценами, кнопками связи, адаптацией под телефон и публикацией через GitHub + Vercel.
+Проект показывает сайты для услуг и технические кейсы: интерфейсы, REST API, PostgreSQL, админ-панели и сценарии записи через Telegram. В портфолио остаются только реализованные возможности без вымышленных результатов или клиентов.
 
 ## Current Focus
 
-Сейчас беру простые проекты:
+Сейчас подхожу к задачам такого уровня:
 
-- лендинг для услуги;
-- сайт-визитка;
-- страница эксперта;
-- портфолио;
-- небольшие правки сайта.
+- лендинги и сайты для услуг;
+- Telegram-боты с понятным сценарием;
+- небольшие backend API;
+- админ-панели;
+- интеграции с PostgreSQL;
+- небольшие доработки сайтов и автоматизация повторяющихся шагов.
 
-Пока не беру сложные интернет-магазины, личные кабинеты, CRM и большие AI-системы. Простые AI-сценарии и автоматизация заявок остаются следующим направлением развития, а не главным оффером.
+Сложные интернет-магазины, крупные личные кабинеты и большие корпоративные системы пока не беру.
 
 ## Sections
 
-- Hero — короткое позиционирование и статистика по демо-проектам
+- Hero — позиционирование и краткий стек
+- About — подход к интерфейсам, API и данным
 - Projects — главный блок с мини-кейсами
-- What I can build — честный список текущих форматов работы
+- Services — список текущих форматов работы и бесплатный аудит сайта
 - How I work — простой процесс работы над страницей
 - Current limits — ограничения по типам задач
 - Contact — способы связи
 
 ## Projects in Portfolio
 
+- Система онлайн-записи — full-stack кейс: Telegram-бот, REST API, PostgreSQL / Neon и админ-панель для управления бронированиями.
 - AI Automation Landing — концепт страницы для услуги автоматизации заявок: показывает, как объяснить сложную цифровую услугу простым языком для малого бизнеса.
 - Exam Mentor Landing — лендинг для репетитора по ЕГЭ с диагностикой, форматом занятий, стоимостью и заявкой на первую встречу.
 - FitCoach Landing — лендинг для персонального тренера с программами, недельным ритмом тренировок, контролем прогресса и записью на старт.
@@ -40,6 +43,11 @@
 - HTML
 - CSS
 - JavaScript
+- Node.js
+- Express
+- PostgreSQL / Neon
+- Telegram Bot API / Telegraf
+- JWT
 - Git
 - GitHub
 - Vercel
@@ -51,6 +59,9 @@
 ├── index.html
 ├── style.css
 ├── script.js
+├── projects/
+│   └── telegram-booking-system/
+│       └── index.html
 └── README.md
 ```
 
@@ -64,6 +75,7 @@
 - Mobile navigation
 - Smooth scrolling
 - Reveal animation
+- Semantic case study with an adaptive architecture diagram
 - Git and GitHub workflow
 
 ## Future Improvements
@@ -76,7 +88,11 @@
 
 ## Live Demo
 
-Portfolio demo: coming soon.
+Portfolio: https://02-personal-portfolio.vercel.app/
+
+Booking system case: https://02-personal-portfolio.vercel.app/projects/telegram-booking-system/
+
+Admin dashboard demo: https://07-booking-admin-dashboard.vercel.app/
 
 AI Automation Landing: https://01-ai-automation-landing.vercel.app/
 
@@ -91,6 +107,8 @@ Warm Cup Landing: https://06-cafe-landing.vercel.app/
 ## GitHub Repository
 
 Portfolio repository: add GitHub repository link here.
+
+Booking admin dashboard: https://github.com/blacklighter58/07-booking-admin-dashboard
 
 AI Automation Landing: https://github.com/blacklighter58/01-ai-automation-landing
 

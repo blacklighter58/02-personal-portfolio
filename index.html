@@ -3,8 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="blacklighter58 — начинающий веб-разработчик, который делает лендинги, страницы услуг и портфолио для малого бизнеса и экспертов.">
-  <title>blacklighter58 — Landing Page Developer</title>
+  <meta name="description" content="blacklighter58 — веб-разработчик: сайты, Telegram-боты, API, PostgreSQL, админ-панели и автоматизация процессов для бизнеса.">
+  <meta property="og:title" content="blacklighter58 — Web Developer">
+  <meta property="og:description" content="Сайты, Telegram-боты, API, PostgreSQL, админ-панели и автоматизация процессов для бизнеса.">
+  <meta property="og:type" content="website">
+  <title>blacklighter58 — Web Developer</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -19,7 +22,8 @@
 
     <nav class="site-nav" aria-label="Основная навигация">
       <a href="#projects">Projects</a>
-      <a href="#build">Build</a>
+      <a href="#about">About</a>
+      <a href="#build">Services</a>
       <a href="#process">Process</a>
       <a href="#limits">Limits</a>
       <a href="#contact">Contact</a>
@@ -29,32 +33,43 @@
   <main>
     <section class="hero section" id="hero">
       <div class="hero-main">
-        <p class="label">Landing pages / small business</p>
-        <h1>Делаю аккуратные лендинги для малого бизнеса, экспертов и услуг</h1>
-        <p class="hero-text">Собираю понятные страницы с оффером, услугами, ценами, кнопками связи и адаптацией под телефон.</p>
+        <p class="label">Web development / business tools</p>
+        <h1>Создаю сайты и цифровые инструменты для бизнеса</h1>
+        <p class="hero-text">Делаю понятные сайты, Telegram-ботов, админ-панели и API: от первой страницы до системы, в которой данные и процессы собраны в одном месте.</p>
 
         <div class="hero-actions" aria-label="Быстрые действия">
-          <a class="btn btn-primary" href="#projects">Посмотреть проекты</a>
-          <a class="btn btn-secondary" href="#contact">Связаться</a>
+          <a class="btn btn-primary" href="#contact">Обсудить задачу</a>
+          <a class="btn btn-secondary" href="#projects">Смотреть проекты</a>
         </div>
       </div>
 
       <aside class="hero-note" aria-label="Кратко о портфолио">
-        <p>Это портфолио начинающего веб-разработчика. Здесь собраны демо-лендинги для разных ниш, чтобы показать структуру, верстку, адаптивность и подачу услуги.</p>
+        <p>Портфолио показывает и сайты для услуг, и технические проекты: работу с интерфейсами, API, базой данных и автоматизацией записи.</p>
         <ul class="hero-stats" aria-label="Короткая статистика">
-          <li><strong>5</strong><span>тематических лендингов</span></li>
-          <li><strong>1</strong><span>личное портфолио</span></li>
-          <li><strong>HTML / CSS / JavaScript</strong><span>основной стек</span></li>
-          <li><strong>GitHub + Vercel</strong><span>публикация</span></li>
+          <li><strong>6</strong><span>демо-проектов в портфолио</span></li>
+          <li><strong>1</strong><span>full-stack кейс с онлайн-записью</span></li>
+          <li><strong>Web + backend</strong><span>интерфейсы, API и данные</span></li>
+          <li><strong>GitHub + Vercel</strong><span>код и публикация</span></li>
         </ul>
       </aside>
+    </section>
+
+    <section class="section about-section" id="about">
+      <div class="section-heading about-heading">
+        <p class="label">About</p>
+        <h2>Делаю интерфейс понятным, а процесс — собранным</h2>
+      </div>
+      <div class="about-content">
+        <p>Создаю лендинги и сайты для услуг, а также небольшие технические решения: Telegram-ботов, API, админ-панели и интеграции с PostgreSQL.</p>
+        <p>В работе начинаю с пользовательского пути и структуры данных, затем собираю интерфейс и проверяю его на разных экранах. Использую HTML, CSS, JavaScript, Node.js, Express и PostgreSQL там, где они действительно нужны задаче.</p>
+      </div>
     </section>
 
     <section class="section projects-section" id="projects">
       <div class="section-heading projects-heading">
         <p class="label">Selected work</p>
         <h2>Проекты</h2>
-        <p>Главный блок портфолио: шесть демонстрационных работ для разных задач. Каждый проект сделан как маленький кейс, а не просто карточка с названием.</p>
+        <p>Шесть работ: сайты для разных ниш и full-stack система онлайн-записи. У каждой — своя задача, интерфейс и технический акцент.</p>
       </div>
 
       <div class="projects-list">
@@ -91,8 +106,8 @@
             <p class="project-note">Админ-панель — один из компонентов системы. Демо не содержит данных для входа.</p>
 
             <div class="project-actions">
-              <a class="btn btn-primary" href="projects/telegram-booking-system/index.html">Подробнее о проекте</a>
-              <a class="btn btn-secondary" href="https://07-booking-admin-dashboard.vercel.app/" target="_blank" rel="noreferrer">Демо админ-панели</a>
+              <a class="btn btn-primary" href="projects/telegram-booking-system/index.html">Project Details</a>
+              <span class="btn btn-secondary btn-disabled" aria-disabled="true" title="Публичная ссылка на Telegram-бота ещё не добавлена">Open Telegram Bot</span>
             </div>
           </div>
         </article>
@@ -119,10 +134,11 @@
             <h3>Warm Cup Landing</h3>
             <p>Сайт для небольшой кофейни у парка: меню, часы работы, атмосфера и быстрый путь к контакту. Главная задача — передать ощущение живого места, куда хочется зайти утром за кофе.</p>
 
-            <ul class="tech-list" aria-label="Особенности проекта Warm Cup Landing">
-              <li>Responsive layout</li>
-              <li>Menu section</li>
-              <li>FAQ accordion</li>
+            <ul class="tech-list" aria-label="Технологии проекта Warm Cup Landing">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>Vercel</li>
             </ul>
 
             <div class="project-actions">
@@ -154,10 +170,11 @@
             <h3>Exam Mentor Landing</h3>
             <p>Лендинг для репетитора по ЕГЭ: диагностика, формат занятий, стоимость и заявка на первую встречу. Упор — спокойная структура подготовки без паники.</p>
 
-            <ul class="tech-list" aria-label="Особенности проекта Exam Mentor Landing">
-              <li>Responsive layout</li>
-              <li>Timeline</li>
-              <li>FAQ section</li>
+            <ul class="tech-list" aria-label="Технологии проекта Exam Mentor Landing">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>Vercel</li>
             </ul>
 
             <div class="project-actions">
@@ -189,10 +206,11 @@
             <h3>Lumi Beauty Landing</h3>
             <p>Сайт для beauty-студии: услуги, цены, запись и мягкая премиальная подача атмосферы.</p>
 
-            <ul class="tech-list" aria-label="Особенности проекта Lumi Beauty Landing">
-              <li>Responsive layout</li>
-              <li>Service cards</li>
-              <li>Booking link</li>
+            <ul class="tech-list" aria-label="Технологии проекта Lumi Beauty Landing">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>Vercel</li>
             </ul>
 
             <div class="project-actions">
@@ -224,10 +242,11 @@
             <h3>FitCoach Landing</h3>
             <p>Лендинг для персонального тренера: программы, недельный ритм тренировок, контроль прогресса и запись на старт. Упор — система вместо случайных упражнений.</p>
 
-            <ul class="tech-list" aria-label="Особенности проекта FitCoach Landing">
-              <li>Responsive layout</li>
-              <li>Program selection</li>
-              <li>FAQ accordion</li>
+            <ul class="tech-list" aria-label="Технологии проекта FitCoach Landing">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>Vercel</li>
             </ul>
 
             <div class="project-actions">
@@ -259,10 +278,11 @@
             <h3>AI Automation Landing</h3>
             <p>Концепт страницы для услуги автоматизации заявок: показывает, как объяснить сложную цифровую услугу простым языком для малого бизнеса.</p>
 
-            <ul class="tech-list" aria-label="Особенности проекта AI Automation Landing">
-              <li>Responsive layout</li>
-              <li>Process steps</li>
-              <li>Form validation</li>
+            <ul class="tech-list" aria-label="Технологии проекта AI Automation Landing">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>Vercel</li>
             </ul>
 
             <div class="project-actions">
@@ -277,39 +297,55 @@
     <section class="section build-section" id="build">
       <div class="section-heading">
         <p class="label">What I can build</p>
-        <h2>Что могу собрать сейчас</h2>
-        <p>Без больших обещаний: только те форматы, которые подходят для текущего уровня и хорошо ложатся в HTML, CSS и JavaScript.</p>
+        <h2>Что могу собрать</h2>
+        <p>От простой страницы до связанного процесса с ботом, API и данными. Беру задачи, которые могу реализовать и проверить самостоятельно.</p>
       </div>
 
       <div class="build-list">
         <article>
           <span>01</span>
-          <h3>Лендинг для услуги</h3>
+          <h3>Лендинги</h3>
           <p>Одна страница с оффером, блоками услуг, ценами, вопросами и кнопками связи.</p>
         </article>
         <article>
           <span>02</span>
-          <h3>Сайт-визитка</h3>
-          <p>Короткая страница для локального проекта, специалиста или небольшой команды.</p>
+          <h3>Сайты для бизнеса</h3>
+          <p>Страницы услуг, сайты-визитки и небольшие сайты для локальных проектов, специалистов и команд.</p>
         </article>
         <article>
           <span>03</span>
-          <h3>Страница эксперта</h3>
-          <p>Подача опыта, формата работы, стоимости и заявки на консультацию или встречу.</p>
+          <h3>Telegram-боты</h3>
+          <p>Простые сценарии для записи, выбора услуги, сбора данных и перехода к следующему действию.</p>
         </article>
         <article>
           <span>04</span>
-          <h3>Портфолио</h3>
-          <p>Аккуратная страница с проектами, описанием подхода и контактами.</p>
+          <h3>Админ-панели</h3>
+          <p>Интерфейсы для просмотра заявок, статусов и рабочих данных без лишних действий.</p>
         </article>
         <article>
           <span>05</span>
-          <h3>Небольшие правки сайта</h3>
-          <p>Исправить текст, блоки, адаптивность, кнопки, отступы или простую интерактивность.</p>
+          <h3>Backend API</h3>
+          <p>REST API на Node.js и Express как единый слой между интерфейсом, ботом и данными.</p>
+        </article>
+        <article>
+          <span>06</span>
+          <h3>PostgreSQL-интеграция</h3>
+          <p>Хранение заявок и рабочих данных в базе, когда браузерного хранения уже недостаточно.</p>
+        </article>
+        <article>
+          <span>07</span>
+          <h3>Автоматизация процессов</h3>
+          <p>Небольшие сценарии, которые убирают повторяющиеся шаги из записи и обработки заявок.</p>
+        </article>
+        <article class="audit-service">
+          <span>08</span>
+          <h3>Бесплатный аудит сайта</h3>
+          <p>Посмотрю структуру, мобильную версию и кнопки связи, чтобы подсказать первые понятные улучшения.</p>
+          <a class="text-link" href="#contact">Запросить аудит</a>
         </article>
       </div>
 
-      <p class="build-note">Простые AI-сценарии и автоматизация заявок — следующее направление развития, а не основной оффер.</p>
+      <p class="build-note">Сложные корпоративные системы и большие продукты беру только по мере роста опыта и после отдельной оценки задачи.</p>
     </section>
 
     <section class="section process-section" id="process">
@@ -331,13 +367,13 @@
         </article>
         <article>
           <span>03</span>
-          <h3>Верстаю страницу</h3>
-          <p>Делаю адаптивную верстку, кнопки, простую интерактивность и понятные состояния.</p>
+          <h3>Собираю и связываю</h3>
+          <p>Делаю адаптивный интерфейс, а при необходимости добавляю бота, API и хранение данных.</p>
         </article>
         <article>
           <span>04</span>
           <h3>Проверяю и публикую</h3>
-          <p>Смотрю страницу на разных экранах, правлю мелочи и готовлю к публикации.</p>
+          <p>Проверяю путь пользователя, ссылки, адаптивность и готовлю проект к публикации.</p>
         </article>
       </div>
     </section>
@@ -345,9 +381,9 @@
     <section class="section limits-section" id="limits">
       <div class="limits-card">
         <p class="label">Task fit</p>
-        <h2>Подходящие задачи</h2>
-        <p>Сейчас основной формат работы — лендинги, сайты-визитки, страницы экспертов и небольшие доработки существующих сайтов.</p>
-        <p class="limits-small">Сложные магазины, личные кабинеты и большие CRM-системы пока не беру.</p>
+        <h2>Какие задачи беру сейчас</h2>
+        <p>Лендинги, сайты для услуг, Telegram-ботов с понятным сценарием, небольшие API, админ-интерфейсы и доработки существующих сайтов.</p>
+        <p class="limits-small">Сложные интернет-магазины, крупные личные кабинеты и большие корпоративные системы пока не беру.</p>
       </div>
     </section>
 
@@ -355,8 +391,8 @@
       <div class="contact-cta">
         <div>
           <p class="label">Contact</p>
-          <h2>Нужна простая страница для услуги или проекта?</h2>
-          <p>Напишите мне — разберём, какие блоки нужны и что можно собрать первой версией.</p>
+          <h2>Есть сайт, идея для бота или процесс, который пора собрать в одном месте?</h2>
+          <p>Можно начать с бесплатного аудита сайта: посмотрю структуру, мобильную версию и путь к заявке, затем обсудим подходящий формат работы.</p>
         </div>
 
         <div class="contact-grid">
@@ -366,7 +402,7 @@
           </a>
           <a class="contact-card" href="https://t.me/vebprogg" target="_blank" rel="noreferrer">
             <span>Telegram</span>
-            <strong>@vebprogg</strong>
+            <strong>Запросить аудит или обсудить задачу</strong>
           </a>
           <div class="contact-card">
             <span>Email</span>
@@ -378,7 +414,7 @@
   </main>
 
   <footer class="site-footer">
-    <p>blacklighter58 — Landing Page Developer, 2026</p>
+    <p>blacklighter58 — Web Developer, 2026</p>
   </footer>
 
   <script src="script.js"></script>
